@@ -1,0 +1,97 @@
+ICHN@DESKTOP-0G54G3N MINGW64 ~/Desktop
+$ cd assinment 
+
+bash: cd: assinment: No such file or directory
+
+ICHN@DESKTOP-0G54G3N MINGW64 
+~/Desktop
+$ cd assignment 
+
+
+ICHN@DESKTOP-0G54G3N MINGW64 ~/Desktop/assignment
+$ 
+mkdir source
+
+ 
+ICHN@DESKTOP-0G54G3N MINGW64 ~/Desktop/assignment
+$ 
+mkdir destination
+
+
+ICHN@DESKTOP-0G54G3N MINGW64 ~/Desktop/assignment
+$ 
+cd source
+
+
+ICHN@DESKTOP-0G54G3N MINGW64 ~/Desktop/assignment/source
+$ 
+touch file.txt
+
+
+ICHN@DESKTOP-0G54G3N MINGW64 ~/Desktop/assignment/source
+$ 
+cat > file.txt
+
+i am stdent.
+not now ut after some time.
+
+
+ICHN@DESKTOP-0G54G3N MINGW64 ~/Desktop/assignment/source
+$ 
+cp file.txt ../destination
+
+
+ICHN@DESKTOP-0G54G3N MINGW64 ~/Desktop/assignment/source
+$ 
+cd ..
+
+
+ICHN@DESKTOP-0G54G3N MINGW64 ~/Desktop/assignment
+$ 
+cd destination
+
+
+ICHN@DESKTOP-0G54G3N MINGW64 ~/Desktop/assignment/destination
+$ 
+rm -r file.txt
+
+
+ICHN@DESKTOP-0G54G3N MINGW64 ~/Desktop/assignment/destination
+$ 
+cd ..
+
+
+ICHN@DESKTOP-0G54G3N MINGW64 ~/Desktop/assignment
+$ 
+cd source
+
+
+ICHN@DESKTOP-0G54G3N MINGW64 ~/Desktop/assignment/source
+$ 
+mv file.txt ../destination
+
+
+ICHN@DESKTOP-0G54G3N MINGW64 ~/Desktop/assignment/source
+$  
+cd ../destination
+
+
+ICHN@DESKTOP-0G54G3N MINGW64 ~/Desktop/assignment/destination
+$ 
+cat > file.txt 
+
+sabjasj dsjkjdsbkj asdkbk
+skajbkjsabkj sjjs
+ sdbkjbk  sajbfkj sakjs
+functionup sajdkj sajdkjsa 
+
+
+ICHN@DESKTOP-0G54G3N MINGW64 ~/Desktop/assignment/destination
+$ 
+grep -i "functionup" file.txt
+
+functionup sajdkj sajdkjsa
+
+ICHN
+@DESKTOP-0G54G3N MINGW64 ~/Desktop/assignment/destination
+$
