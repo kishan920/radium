@@ -1,7 +1,6 @@
 const urlModel = require('../Models/UrlModel')
 const redis = require("redis");
 const { promisify } = require("util");
-//Connect to redis
 const redisClient = redis.createClient(
     16347,
     "redis-16347.c264.ap-south-1-1.ec2.cloud.redislabs.com",
@@ -19,7 +18,6 @@ const GET_ASYNC = promisify(redisClient.GET).bind(redisClient);
 
 const getUrl = async function (req, res) {
     try {
-        ///console.log(typeof req.params.urlCode,"jrwhdjs")
         if (req.params.urlCode == 0) {
             return res.status(400).send({ status: false, msg: "please provide urlCode" })
         }
@@ -45,8 +43,4 @@ const getUrl = async function (req, res) {
         res.status(500).send('Server Error')
     }
 }
-
-
-
-
 module.exports.getUrl = getUrl

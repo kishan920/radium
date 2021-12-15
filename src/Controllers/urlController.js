@@ -1,8 +1,6 @@
 const urlModel = require('../Models/UrlModel')
 const shortid = require('shortid');
 const validUrl = require('valid-url')
-
-
 const shortenUrl = async function (req, res) {
     try {
         const baseUrl = 'http://localhost:3000'
@@ -21,12 +19,9 @@ const shortenUrl = async function (req, res) {
             let url = await urlModel.findOne({ longUrl: longUrl })
             if (url) {
                 res.status(200).send({status:true, message: "You have already created shortUrl for the requested URL as given below", data: url.shortUrl })
-                //res.status(200).send({ status: true, data: url.shortUrl })
+        
             } else {
-                // join the generated short code the the base url
                 const shortUrl = baseUrl + '/' + urlCode.toLowerCase()
-
-                // invoking the Url model and saving to the DB
                 url = urlModel({
                     longUrl,
                     shortUrl,
